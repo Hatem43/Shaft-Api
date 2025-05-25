@@ -12,10 +12,10 @@ public class Main {
         api.get("/posts").perform();
         int code=api.getResponseStatusCode();
         System.out.println("status code is " +  code);
-        String response=api.getResponseBody();
+        String responsebody=api.getResponseBody();
+        System.out.println("response body is "+ responsebody);
+        String response= String.valueOf(api.getResponse());
         System.out.println("response is "+ response);
-        String body= String.valueOf(api.getResponse());
-        System.out.println("response is "+ body);
         int responsecode=api.getResponseStatusCode();
         System.out.println("status code is " +  responsecode);
         long restime=api.getResponseTime();
