@@ -1,2 +1,1 @@
-# Shaft-Api
-Rest assured using Shaft 
+API testing using Shaft 
